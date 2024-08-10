@@ -1,0 +1,31 @@
+.nav-link {
+  color: #fff;
+  transition: color 0.15s ease-in-out;
+}
+.nav-link:hover, .nav-link:focus {
+  color: #18bc9c;
+}
+
+.nav-item {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.navbar {
+  padding: 0;
+}
+.navbar-brand {
+  padding: 0;
+}
+.navbar-brand__logo img {
+  width: 300px;
+}
+.navbar-nav {
+  gap: 30px;
+  margin-left: 100px;
+}
+
+/*# sourceMappingURL=navbar.css.map*/

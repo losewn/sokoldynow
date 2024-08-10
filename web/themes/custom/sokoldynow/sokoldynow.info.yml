@@ -1,0 +1,44 @@
+name: sokoldynow
+description: ''
+screenshot: screenshot.png
+'alt text': 'sokoldynow theme screenshot'
+core_version_requirement: ^10
+engine: twig
+type: theme
+'base theme': radix
+starterkit: true
+dependencies:
+  - 'drupal:serialization'
+'interface translation project': sokoldynow
+'interface translation server pattern': themes/custom/sokoldynow/translations/%language.po
+regions:
+  navbar_branding: 'Navbar branding'
+  navbar_left: 'Navbar left'
+  navbar_right: 'Navbar right'
+  header: Header
+  content: Content
+  page_bottom: 'Page bottom'
+  footer: Footer
+libraries:
+  - sokoldynow/style
+ckeditor5-stylesheets:
+  - build/css/main.style.css
+libraries-extend:
+  core/drupal.ajax:
+    - sokoldynow/drupal.ajax
+  core/drupal.checkbox:
+    - sokoldynow/drupal.checkbox
+  core/drupal.dialog:
+    - sokoldynow/drupal.dialog
+  core/drupal.dialog.ajax:
+    - sokoldynow/drupal.dialog.ajax
+  core/drupal.message:
+    - sokoldynow/drupal.message
+  core/drupal.progress:
+    - sokoldynow/drupal.progress
+  clientside_validation_jquery/cv.jquery.validate:
+    - sokoldynow/jquery.validate
+version: 1.0.0
+project: radix
+datestamp: 1720164737
+generator: 'radix_starterkit:6.0.0-rc3'

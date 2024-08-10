@@ -1,0 +1,36 @@
+@import "../../src/scss/init";
+
+.nav-link {
+  color: $nav-link-color;
+  transition: color .15s ease-in-out;
+  &:hover, &:focus {
+    color: $nav-link-color-hover;
+  }
+}
+
+.nav-item {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.navbar {
+  padding: 0;
+
+  &-brand {
+    padding: 0;
+
+    &__logo {
+      img {
+        width: 300px;
+      }
+    }
+  }
+
+  &-nav {
+    gap: 30px;
+    margin-left: 100px;
+  }
+}

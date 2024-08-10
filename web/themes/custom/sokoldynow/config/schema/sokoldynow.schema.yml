@@ -1,0 +1,5 @@
+# Schema for the configuration files of the sokoldynow theme.
+
+sokoldynow.settings:
+  type: theme_settings
+  label: 'sokoldynow settings'
