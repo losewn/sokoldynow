@@ -1,0 +1,22 @@
+uuid: bdfe0306-7c95-4636-9185-020eb19edb7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.match.field_teams
+    - node.type.match
+  module:
+    - user
+id: node.match.teaser
+targetEntityType: node
+bundle: match
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_teams: true

@@ -1,0 +1,24 @@
+uuid: 144b6a28-eb08-4296-a520-2d5bd5e934e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slider
+  module:
+    - views
+  theme:
+    - sokoldynow
+id: sokoldynow_views_block__slider_block_1
+theme: sokoldynow
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:slider-block_1'
+settings:
+  id: 'views_block:slider-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

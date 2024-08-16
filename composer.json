@@ -16,10 +16,12 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.4",
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
         "drupal/core-recommended": "^10.3",
+        "drupal/image_popup": "^2.0",
         "drupal/metatag": "^2.0",
         "drupal/paragraphs": "^1.17",
         "drupal/pathauto": "^1.13",
@@ -41,7 +43,8 @@
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "cweagans/composer-patches": true
         },
         "sort-packages": true
     },
@@ -100,6 +103,12 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
-        }
+        },
+        "patches": {
+            "drupal/core": {
+                "Bootstrap Modal dialog Not closing after 10.3.0 Update": "https://www.drupal.org/files/issues/2024-06-25/3457061-closing_bootstrap_modal_dialog.patch"
+            }
+        },
+        "enable-patching": true
     }
 }

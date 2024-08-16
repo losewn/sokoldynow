@@ -4,8 +4,15 @@
   // padding: 10px;
 
   .view-content {
-    // display: flex;
-    // flex-direction: column;
-    // gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 7rem;
+    row-gap: 2rem;
+    align-items: center;
   }
+}
+
+.view-slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

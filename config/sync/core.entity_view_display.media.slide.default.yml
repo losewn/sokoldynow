@@ -1,0 +1,31 @@
+uuid: f76fadc7-e702-4b23-b5aa-35e83e180888
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.slide.field_media_image
+    - image.style.large
+    - media.type.slide
+  module:
+    - image
+id: media.slide.default
+targetEntityType: media
+bundle: slide
+mode: default
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -12272,4 +12272,19 @@ textarea.form-control-lg {
   margin-left: 100px;
 }
 
+.block-views-blocksponsors-block-1 .view-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 7rem;
+     -moz-column-gap: 7rem;
+          column-gap: 7rem;
+  row-gap: 2rem;
+  align-items: center;
+}
+
+.view-slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /*# sourceMappingURL=main.style.css.map*/

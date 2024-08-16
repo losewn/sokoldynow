@@ -1,0 +1,28 @@
+uuid: 71d7b6a2-17b6-45b8-8aff-655f51977937
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.match.field_teams
+    - node.type.match
+  module:
+    - user
+id: node.match.default
+targetEntityType: node
+bundle: match
+mode: default
+content:
+  field_teams:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,9 @@
+uuid: 072892f0-be6f-4794-81a0-7a52f0a02798
+langcode: en
+status: true
+dependencies: {  }
+name: Teams
+vid: teams
+description: null
+weight: 0
+new_revision: false

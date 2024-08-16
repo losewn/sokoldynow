@@ -1,0 +1,25 @@
+uuid: 89f7caa3-fe1a-4263-b47d-57bec12c9e40
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sokoldynow
+_core:
+  default_config_hash: OQN2S2YG4HD7hqz9cJlP5Mra35AUUnN_YMAKP5GFGeE
+id: sokoldynow_branding
+theme: sokoldynow
+region: navbar_branding
+weight: -1
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,14 @@
+uuid: 1f9c4524-9e4e-433f-97d5-f5574bf16a3f
+langcode: en
+status: true
+dependencies: {  }
+id: slide
+label: Slide
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name
