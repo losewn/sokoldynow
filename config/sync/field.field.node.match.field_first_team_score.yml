@@ -1,0 +1,23 @@
+uuid: b246563e-6bb5-45c9-a7c9-fb20c3dc6fe8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_first_team_score
+    - node.type.match
+id: node.match.field_first_team_score
+field_name: field_first_team_score
+entity_type: node
+bundle: match
+label: 'First team score'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - media.type.slide
+    - views.view.last_match
   module:
     - media
     - user
@@ -213,7 +214,31 @@ display:
           query_tags: {  }
       relationships: {  }
       header: {  }
-      footer: {  }
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: 'ostatni mecz'
+            format: basic_html
+          tokenize: false
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: view
+          empty: false
+          view_to_insert: 'last_match:block_1'
+          inherit_arguments: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1

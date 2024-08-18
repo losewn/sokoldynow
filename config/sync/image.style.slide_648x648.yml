@@ -1,0 +1,21 @@
+uuid: 5393ab5c-ec89-4113-a49f-c27a71a85025
+langcode: en
+status: true
+dependencies: {  }
+name: slide_648x648
+label: Slide(648x648)
+effects:
+  71e9216e-efc5-4148-bc6f-711004c9a5b6:
+    uuid: 71e9216e-efc5-4148-bc6f-711004c9a5b6
+    id: image_scale
+    weight: 1
+    data:
+      width: 648
+      height: 648
+      upscale: false
+  690ab9eb-163f-4572-96e0-3e17a4becb38:
+    uuid: 690ab9eb-163f-4572-96e0-3e17a4becb38
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.match.field_first_team_score
+    - field.field.node.match.field_second_team_score
     - field.field.node.match.field_teams
     - node.type.match
   module:
@@ -12,11 +14,30 @@ targetEntityType: node
 bundle: match
 mode: default
 content:
-  field_teams:
-    type: entity_reference_label
-    label: above
+  field_first_team_score:
+    type: number_integer
+    label: hidden
     settings:
-      link: true
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_second_team_score:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_teams:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
     weight: 102
     region: content

@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.match.field_first_team_score
+    - field.field.node.match.field_second_team_score
     - field.field.node.match.field_teams
     - node.type.match
   module:
@@ -17,6 +19,20 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_first_team_score:
+    type: number
+    weight: 123
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_second_team_score:
+    type: number
+    weight: 124
+    region: content
+    settings:
+      placeholder: ''
     third_party_settings: {  }
   field_teams:
     type: entity_reference_autocomplete

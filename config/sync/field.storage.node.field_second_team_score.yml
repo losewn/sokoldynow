@@ -1,0 +1,20 @@
+uuid: 4a864b9a-f0b4-41c3-a2d2-eca1dbc4508b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_second_team_score
+field_name: field_second_team_score
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

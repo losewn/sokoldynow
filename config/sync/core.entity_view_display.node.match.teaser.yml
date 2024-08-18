@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.match.field_first_team_score
+    - field.field.node.match.field_second_team_score
     - field.field.node.match.field_teams
     - node.type.match
   module:
@@ -19,4 +21,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_first_team_score: true
+  field_second_team_score: true
   field_teams: true
