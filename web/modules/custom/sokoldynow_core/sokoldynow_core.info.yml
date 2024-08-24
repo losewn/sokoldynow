@@ -1,0 +1,5 @@
+name: 'Sokoldynow Core'
+type: module
+description: 'Sokoldynow Core functions'
+core_version_requirement: ^10
+package: 'custom'
