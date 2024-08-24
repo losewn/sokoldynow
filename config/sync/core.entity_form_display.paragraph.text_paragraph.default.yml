@@ -1,0 +1,27 @@
+uuid: 12fa219e-95ad-4aa2-81cf-654042b192e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_paragraph.field_text_formatted_long
+    - paragraphs.paragraphs_type.text_paragraph
+  module:
+    - text
+id: paragraph.text_paragraph.default
+targetEntityType: paragraph
+bundle: text_paragraph
+mode: default
+content:
+  field_text_formatted_long:
+    type: text_textarea_with_summary
+    weight: 0
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

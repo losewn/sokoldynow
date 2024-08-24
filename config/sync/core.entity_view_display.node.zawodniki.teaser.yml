@@ -1,0 +1,32 @@
+uuid: 7fc946c2-7325-4f58-b6b4-d978a7774cf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.zawodniki.body
+    - field.field.node.zawodniki.field_media_image
+    - node.type.zawodniki
+  module:
+    - text
+    - user
+id: node.zawodniki.teaser
+targetEntityType: node
+bundle: zawodniki
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_media_image: true

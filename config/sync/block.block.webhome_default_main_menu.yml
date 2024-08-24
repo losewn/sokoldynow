@@ -1,0 +1,27 @@
+uuid: 7c0d5bb1-72b8-4392-9d18-8f01d6d467f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - webhome_default
+_core:
+  default_config_hash: A01fxGUncGI4ZkNaOP9SuZbthSxTQhvfi7KVkdok4mY
+id: webhome_default_main_menu
+theme: webhome_default
+region: header
+weight: -3
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

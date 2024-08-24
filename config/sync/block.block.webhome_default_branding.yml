@@ -1,0 +1,25 @@
+uuid: 0fefa289-ae60-466c-87a6-f05ef8720f8e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - webhome_default
+_core:
+  default_config_hash: OQN2S2YG4HD7hqz9cJlP5Mra35AUUnN_YMAKP5GFGeE
+id: webhome_default_branding
+theme: webhome_default
+region: header
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: true
+visibility: {  }

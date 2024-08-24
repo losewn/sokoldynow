@@ -1,0 +1,25 @@
+uuid: d27366ee-4ce3-4120-baf8-952784fa4941
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.last_matches.field_views
+    - paragraphs.paragraphs_type.last_matches
+  module:
+    - viewfield
+id: paragraph.last_matches.default
+targetEntityType: paragraph
+bundle: last_matches
+mode: default
+content:
+  field_views:
+    type: viewfield_default
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: false
+      empty_view_title: hidden
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

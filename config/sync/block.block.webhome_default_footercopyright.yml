@@ -1,0 +1,25 @@
+uuid: e16dc854-f4f7-42c4-80ea-adca575723da
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:44d24ebb-0d64-4f71-b3f3-6569dca6fdd6'
+  module:
+    - block_content
+  theme:
+    - webhome_default
+id: webhome_default_footercopyright
+theme: webhome_default
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:44d24ebb-0d64-4f71-b3f3-6569dca6fdd6'
+settings:
+  id: 'block_content:44d24ebb-0d64-4f71-b3f3-6569dca6fdd6'
+  label: 'Footer copyright'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

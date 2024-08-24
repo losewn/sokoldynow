@@ -1,0 +1,22 @@
+uuid: 917612a7-07d4-40eb-a7df-8520ba3a987e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slider_item.field_media_image
+    - paragraphs.paragraphs_type.slider_item
+id: paragraph.slider_item.default
+targetEntityType: paragraph
+bundle: slider_item
+mode: default
+content:
+  field_media_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
