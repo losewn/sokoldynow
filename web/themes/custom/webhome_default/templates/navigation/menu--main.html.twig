@@ -25,7 +25,6 @@
   @see https://twig.symfony.com/doc/3.x/tags/macro.html
 #}
 <div id="cssmenu" class="align-center">
-  <div id="menu-button">Menu</div>
     {% set items = simplify_menu('main') %}
     <ul>
       {% for menu_item in items.menu_tree %}
